@@ -54,13 +54,13 @@ extension App {
     LanguageManager.shared.fetchChoseLanguage()
     RatingApp.shared.fetch()
     
-    IAPManager.shared.verify(completion: { [weak self] permissions in
-      guard let self else {
-        return
-      }
-      PermissionManager.shared.unlock(permissions: permissions)
+//    IAPManager.shared.verify(completion: { [weak self] permissions in
+//      guard let self else {
+//        return
+//      }
+//      PermissionManager.shared.unlock(permissions: permissions)
       registerAdMob()
-    }, errored: registerAdMob)
+//    }, errored: registerAdMob)
   }
   
   func setShowAppOpen(allow: Bool) {
@@ -103,7 +103,7 @@ extension App {
   }
   
   private func registerAdMob() {
-//    AdMobManager.shared.activeDebug(testDeviceIdentifiers: ["F2BFBF3F-9B66-48E3-9C8A-CB15D388890A"],
+//    AdMobManager.shared.activeDebug(testDeviceIdentifiers: [<#T##String#>],
 //                                    reset: true)
     
     if let url = Bundle.main.url(forResource: "AdMobDefaultValue", withExtension: "json"),

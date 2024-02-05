@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   ) -> Bool {
     // Override point for customization after application launch.
     FirebaseApp.configure()
-    App.shared.fetch()
 //    TrackingSDK.shared.initialize(devKey: <#T##String#>,
 //                                  appID: AppText.App.idApp,
 //                                  timeout: nil)
 //    IAPManager.shared.initialize(apiKey: <#T##String#>)
+    App.shared.fetch()
     return true
   }
 }

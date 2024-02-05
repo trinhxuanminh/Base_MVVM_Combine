@@ -13,7 +13,7 @@ enum EndPoint {
   var domain: String {
     switch self {
     case .nowPlaying:
-      return "https://api.themoviedb.org"
+      return URLs.tmdb
     }
   }
   
