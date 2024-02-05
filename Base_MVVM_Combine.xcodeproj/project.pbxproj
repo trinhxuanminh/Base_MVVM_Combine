@@ -438,10 +438,10 @@
 			isa = PBXGroup;
 			children = (
 				9627479C2B6CF5A5005BE4FD /* Download */,
-				962747A12B6CF634005BE4FD /* RatingApp.swift */,
 				962747A32B6CF66D005BE4FD /* RealmService.swift */,
 				962747A52B6CF688005BE4FD /* NetworkMonitor.swift */,
 				962747A72B6CF6A5005BE4FD /* FileHelper.swift */,
+				962747A12B6CF634005BE4FD /* RatingApp.swift */,
 				962747A92B6CF712005BE4FD /* CameraManager.swift */,
 				962747AB2B6CF744005BE4FD /* LanguageManager.swift */,
 				962747AD2B6CF78D005BE4FD /* LoadingManager.swift */,

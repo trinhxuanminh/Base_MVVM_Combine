@@ -18,8 +18,8 @@ class AppText {
   enum LanguageKeys: String {
     case language
     
-    var localized: String {
-      return LanguageManager.localized(key: self.rawValue) ?? String()
+    var localized: String? {
+      return LanguageManager.localized(key: self.rawValue)
     }
   }
   

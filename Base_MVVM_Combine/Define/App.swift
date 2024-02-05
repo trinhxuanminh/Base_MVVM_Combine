@@ -28,7 +28,6 @@ final class App {
   }
   
   // Local
-  private(set) var loadRemoteConfigState = false
   private(set) var allowShowAppOpen = false
   private(set) var allowShowWelcome = false
   private(set) var openAppCount = 0
@@ -101,8 +100,6 @@ extension App {
     if let pushUpdateConfig = try? JSONDecoder().decode(PushUpdateConfig.self, from: pushUpdateData) {
       self.pushUpdateConfig = pushUpdateConfig
     }
-    // Local
-    self.loadRemoteConfigState = true
   }
   
   private func registerAdMob() {
