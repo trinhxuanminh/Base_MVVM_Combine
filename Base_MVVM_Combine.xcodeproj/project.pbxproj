@@ -649,14 +649,14 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Media;
+			name = Media;
 			sourceTree = "<group>";
 		};
 		96BCFFDD2B721AEA000B5FAF /* Item */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Item;
+			name = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
