@@ -331,8 +331,8 @@
 				969BC98F2B7102D800949082 /* URLs.swift */,
 				9627476A2B6CA173005BE4FD /* Images */,
 				9627476D2B6CA1BD005BE4FD /* AppColor */,
+				96BCFFDC2B721AB8000B5FAF /* Media */,
 				962747702B6CA1F7005BE4FD /* Fonts */,
-				962747712B6CA205005BE4FD /* Media */,
 				962747722B6CA21E005BE4FD /* Languages */,
 				962747732B6CA238005BE4FD /* Types */,
 			);
@@ -397,7 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				962747B82B6CF9EA005BE4FD /* List */,
-				962747B92B6CF9EF005BE4FD /* Item */,
+				96BCFFDD2B721AEA000B5FAF /* Item */,
 				969BC9672B70E23F00949082 /* SplashRouter.swift */,
 				969BC97B2B70EC0100949082 /* WelcomeRouter.swift */,
 			);
@@ -425,13 +425,6 @@
 			children = (
 			);
 			name = Fonts;
-			sourceTree = "<group>";
-		};
-		962747712B6CA205005BE4FD /* Media */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Media;
 			sourceTree = "<group>";
 		};
 		962747722B6CA21E005BE4FD /* Languages */ = {
@@ -583,13 +576,6 @@
 			name = List;
 			sourceTree = "<group>";
 		};
-		962747B92B6CF9EF005BE4FD /* Item */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Item;
-			sourceTree = "<group>";
-		};
 		969BC9602B70E14500949082 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -657,6 +643,20 @@
 				96BC7D6E2B71E8A00020CDC5 /* LoadMoreCRV.xib */,
 			);
 			name = Reusable;
+			sourceTree = "<group>";
+		};
+		96BCFFDC2B721AB8000B5FAF /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		96BCFFDD2B721AEA000B5FAF /* Item */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
