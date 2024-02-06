@@ -11,15 +11,18 @@ import Combine
 class ListMovieViewModel: BaseViewModel {
   enum State {
     case initial
+    case fetched
   }
   
   enum Action {
+    case loadMore
     case select(_ index: Int)
   }
   
   private let type: MovieType
   let action = PassthroughSubject<Action, Never>()
   let movies = CurrentValueSubject<[MovieViewModel], Never>([])
+  let isLoading = CurrentValueSubject<Bool, Never>(false)
   private let state = CurrentValueSubject<State, Never>(.initial)
   private let useCase = ListMovieUseCase()
   private let router = ListMovieRouter()
@@ -49,12 +52,17 @@ extension ListMovieViewModel {
   private func processState(_ state: State) {
     switch state {
     case .initial:
+      isLoading.value = true
       fetch()
+    case .fetched:
+      isLoading.value = false
     }
   }
   
   private func processAction(_ action: Action) {
     switch action {
+    case .loadMore:
+      fetch()
     case .select(let index):
       let movie = movies.value[index]
       router.route(to: .detail, parameters: [
@@ -67,7 +75,9 @@ extension ListMovieViewModel {
 extension ListMovieViewModel {
   private func fetch() {
     Task {
-      movies.value = await useCase.getMovie(type: type)
+      let resultMovies = await useCase.getMovie(type: type)
+      movies.value.append(contentsOf: resultMovies)
+      state.value = .fetched
     }
   }
 }

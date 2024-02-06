@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCVC" customModule="Base_MVVM_Combine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="168" height="293"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="168" height="293"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1IT-NK-z7C">
+                        <rect key="frame" x="0.0" y="0.0" width="168" height="293"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jj-kd-gvM">
+                        <rect key="frame" x="6" y="247" width="156" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vME-JW-s2m">
+                        <rect key="frame" x="6" y="268" width="156" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hce-2P-afp">
+                        <rect key="frame" x="132" y="6.0000000000000009" width="30" height="13.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1IT-NK-z7C" secondAttribute="bottom" id="9k9-Qh-G9K"/>
+                <constraint firstItem="1IT-NK-z7C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ce2-Nd-Px5"/>
+                <constraint firstItem="vME-JW-s2m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="HD1-3Q-lvr"/>
+                <constraint firstItem="hce-2P-afp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="IGT-Ih-7iJ"/>
+                <constraint firstAttribute="trailing" secondItem="hce-2P-afp" secondAttribute="trailing" constant="6" id="UYw-Z2-2ZD"/>
+                <constraint firstAttribute="trailing" secondItem="1IT-NK-z7C" secondAttribute="trailing" id="WWT-Uc-wRc"/>
+                <constraint firstItem="vME-JW-s2m" firstAttribute="top" secondItem="9jj-kd-gvM" secondAttribute="bottom" constant="4" id="fBr-gG-Qt9"/>
+                <constraint firstItem="9jj-kd-gvM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="gFR-4d-RxT"/>
+                <constraint firstItem="1IT-NK-z7C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iS7-Qf-8kM"/>
+                <constraint firstAttribute="bottom" secondItem="vME-JW-s2m" secondAttribute="bottom" constant="8" id="n3l-dM-aj4"/>
+                <constraint firstAttribute="trailing" secondItem="vME-JW-s2m" secondAttribute="trailing" constant="6" id="wCR-8x-JQc"/>
+                <constraint firstAttribute="trailing" secondItem="9jj-kd-gvM" secondAttribute="trailing" constant="6" id="wQo-d4-IjH"/>
+            </constraints>
+            <size key="customSize" width="168" height="293"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="genresLabel" destination="vME-JW-s2m" id="PDZ-Ki-sCk"/>
+                <outlet property="nameLabel" destination="9jj-kd-gvM" id="MuP-Jf-AV6"/>
+                <outlet property="posterImageView" destination="1IT-NK-z7C" id="Jtu-90-Qlk"/>
+                <outlet property="voteLabel" destination="hce-2P-afp" id="Gwh-nu-4Lh"/>
+            </connections>
+            <point key="canvasLocation" x="-38.167938931297705" y="-78.521126760563391"/>
+        </collectionViewCell>
+    </objects>
+</document>

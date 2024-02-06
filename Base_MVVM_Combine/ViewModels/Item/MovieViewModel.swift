@@ -43,7 +43,7 @@ extension MovieViewModel {
     case .initial:
       title.value = movie.title
       overview.value = movie.overview
-      vote.value = String(movie.vote.roundToDecimals(decimals: 1)) + " Star"
+      vote.value = String(movie.vote?.roundToDecimals(decimals: 1) ?? 0.0) + "⭐️"
       genres.value = "Action"
       bindBackdrop()
       bindPoster()
@@ -53,7 +53,10 @@ extension MovieViewModel {
 
 extension MovieViewModel {
   private func bindBackdrop() {
-    guard let url = (URLs.image + movie.backdrop).getCleanedURL() else {
+    guard 
+      let backdrop = movie.backdrop,
+      let url = (URLs.image + backdrop).getCleanedURL()
+    else {
       return
     }
     SDWebImageManager.shared.loadImage(with: url,
@@ -62,12 +65,15 @@ extension MovieViewModel {
       guard let self, let image else {
         return
       }
-      backdrop.value = image
+      self.backdrop.value = image
     })
   }
   
   private func bindPoster() {
-    guard let url = (URLs.image + movie.poster).getCleanedURL() else {
+    guard 
+      let poster = movie.poster,
+      let url = (URLs.image + poster).getCleanedURL()
+    else {
       return
     }
     SDWebImageManager.shared.loadImage(with: url,
@@ -76,7 +82,7 @@ extension MovieViewModel {
       guard let self, let image else {
         return
       }
-      poster.value = image
+      self.poster.value = image
     })
   }
 }

@@ -9,11 +9,11 @@ import Foundation
 import RealmSwift
 
 class MovieObject: BaseObject {
-  @Persisted var backdrop: String
-  @Persisted var poster: String
-  @Persisted var title: String
-  @Persisted var overview: String
-  @Persisted var vote: Double
+  @Persisted var backdrop: String?
+  @Persisted var poster: String?
+  @Persisted var title: String?
+  @Persisted var overview: String?
+  @Persisted var vote: Double?
   @Persisted var genres: List<Int>
   
   enum CodingKeys: String, CodingKey {
@@ -30,11 +30,11 @@ class MovieObject: BaseObject {
     self.init()
     let container = try decoder.container(keyedBy: CodingKeys.self)
     self.id = String(try container.decode(Int.self, forKey: .id))
-    self.backdrop = try container.decode(String.self, forKey: .backdrop)
-    self.poster = try container.decode(String.self, forKey: .poster)
-    self.title = try container.decode(String.self, forKey: .title)
-    self.overview = try container.decode(String.self, forKey: .overview)
-    self.vote = try container.decode(Double.self, forKey: .vote)
+    self.backdrop = try container.decode(String?.self, forKey: .backdrop)
+    self.poster = try container.decode(String?.self, forKey: .poster)
+    self.title = try container.decode(String?.self, forKey: .title)
+    self.overview = try container.decode(String?.self, forKey: .overview)
+    self.vote = try container.decode(Double?.self, forKey: .vote)
     
     if let genres = try container.decode([Int]?.self, forKey: .genres) {
       self.genres.append(objectsIn: genres)

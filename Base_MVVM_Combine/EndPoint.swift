@@ -8,7 +8,7 @@
 import Foundation
 
 enum EndPoint {
-  case nowPlaying
+  case nowPlaying(page: Int)
   
   var domain: String {
     switch self {
@@ -34,8 +34,9 @@ enum EndPoint {
   var params: [String: String?] {
     var params: [String: String?] = [:]
     switch self {
-    case .nowPlaying:
+    case .nowPlaying(let page):
       params["api_key"] = "dc9e9a73378330417bb4818abf1b60ed"
+      params["page"] = String(page)
     }
     return params
   }

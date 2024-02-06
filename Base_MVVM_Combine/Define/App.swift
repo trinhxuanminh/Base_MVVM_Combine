@@ -103,8 +103,8 @@ extension App {
   }
   
   private func registerAdMob() {
-//    AdMobManager.shared.activeDebug(testDeviceIdentifiers: [<#T##String#>],
-//                                    reset: true)
+    AdMobManager.shared.activeDebug(testDeviceIdentifiers: [],
+                                    reset: true)
     
     if let url = Bundle.main.url(forResource: "AdMobDefaultValue", withExtension: "json"),
        let data = try? Data(contentsOf: url) {
