@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,8 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootVC" customModule="Base_MVVM_Combine" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="bRJ-Lm-eOB" id="6bH-0C-fyG"/>
-                <outlet property="loadingView" destination="cAJ-27-K1B" id="HNR-IZ-paN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,45 +18,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bRJ-Lm-eOB">
-                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aT0-nX-QfT">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="50" height="50"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-27-K1B" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="20" id="iIy-aw-5JN"/>
-                        <constraint firstAttribute="height" constant="20" id="zUe-Yj-JW2"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="color">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
-                            <real key="value" value="30"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballSpinFadeLoader"/>
-                    </userDefinedRuntimeAttributes>
-                </view>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="background"/>
-            <constraints>
-                <constraint firstItem="bRJ-Lm-eOB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="HhP-qq-c9S"/>
-                <constraint firstAttribute="bottom" secondItem="bRJ-Lm-eOB" secondAttribute="bottom" id="XqZ-5E-WZl"/>
-                <constraint firstItem="cAJ-27-K1B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="j5g-de-vsz"/>
-                <constraint firstItem="bRJ-Lm-eOB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nXT-3g-gOy"/>
-                <constraint firstItem="cAJ-27-K1B" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ncz-uw-qOx"/>
-                <constraint firstAttribute="trailing" secondItem="bRJ-Lm-eOB" secondAttribute="trailing" id="yge-wx-7EU"/>
-            </constraints>
             <point key="canvasLocation" x="138" y="21"/>
         </view>
     </objects>

@@ -9,10 +9,5 @@ import Foundation
 import Combine
 
 class RootViewModel: BaseViewModel {
-  let listMovieViewModel: ListMovieViewModel
   
-  override init() {
-    self.listMovieViewModel = ListMovieViewModel(type: .nowPlaying)
-    super.init()
-  }
 }

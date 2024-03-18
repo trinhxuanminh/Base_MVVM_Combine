@@ -8,35 +8,33 @@
 import Foundation
 
 enum EndPoint {
-  case nowPlaying(page: Int)
   
   var domain: String {
     switch self {
-    case .nowPlaying:
-      return URLs.tmdb
+    default:
+      return ""
     }
   }
   
   var path: String? {
     switch self {
-    case .nowPlaying:
-      return "/3/movie/now_playing"
+    default:
+      return ""
     }
   }
   
   var method: String {
     switch self {
-    case .nowPlaying:
-      return "GET"
+    default:
+      return ""
     }
   }
   
   var params: [String: String?] {
     var params: [String: String?] = [:]
     switch self {
-    case .nowPlaying(let page):
-      params["api_key"] = "dc9e9a73378330417bb4818abf1b60ed"
-      params["page"] = String(page)
+    default:
+      break
     }
     return params
   }

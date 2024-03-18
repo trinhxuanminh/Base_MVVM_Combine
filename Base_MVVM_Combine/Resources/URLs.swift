@@ -8,6 +8,4 @@
 import Foundation
 
 enum URLs {
-  static let tmdb = "https://api.themoviedb.org"
-  static let image = "https://image.tmdb.org/t/p/w500"
 }
