@@ -104,8 +104,6 @@
 		969BC97E2B70EC4200949082 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BC97D2B70EC4200949082 /* WelcomeViewModel.swift */; };
 		969BC9842B70F42A00949082 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BC9832B70F42900949082 /* RootViewModel.swift */; };
 		969BC9902B7102D800949082 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BC98F2B7102D800949082 /* URLs.swift */; };
-		96BC7D6F2B71E8A00020CDC5 /* LoadMoreCRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC7D6D2B71E8A00020CDC5 /* LoadMoreCRV.swift */; };
-		96BC7D702B71E8A00020CDC5 /* LoadMoreCRV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BC7D6E2B71E8A00020CDC5 /* LoadMoreCRV.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,8 +181,6 @@
 		969BC97D2B70EC4200949082 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		969BC9832B70F42900949082 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		969BC98F2B7102D800949082 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		96BC7D6D2B71E8A00020CDC5 /* LoadMoreCRV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCRV.swift; sourceTree = "<group>"; };
-		96BC7D6E2B71E8A00020CDC5 /* LoadMoreCRV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreCRV.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,7 +472,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Response;
+			name = Response;
 			sourceTree = "<group>";
 		};
 		9627479C2B6CF5A5005BE4FD /* Download */ = {
@@ -527,14 +523,14 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Item;
+			name = Item;
 			sourceTree = "<group>";
 		};
 		962747B62B6CF9DE005BE4FD /* List */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = List;
+			name = List;
 			sourceTree = "<group>";
 		};
 		962747B72B6CF9E3005BE4FD /* Item */ = {
@@ -598,14 +594,12 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Item;
+			name = Item;
 			sourceTree = "<group>";
 		};
 		96BC7D682B71E7CC0020CDC5 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
-				96BC7D6D2B71E8A00020CDC5 /* LoadMoreCRV.swift */,
-				96BC7D6E2B71E8A00020CDC5 /* LoadMoreCRV.xib */,
 			);
 			name = Reusable;
 			sourceTree = "<group>";
@@ -727,7 +721,6 @@
 				969BC9642B70E16100949082 /* SplashVC.xib in Resources */,
 				9627476F2B6CA1CE005BE4FD /* AppColor.xcassets in Resources */,
 				969BC97A2B70EBDB00949082 /* WelcomeVC.xib in Resources */,
-				96BC7D702B71E8A00020CDC5 /* LoadMoreCRV.xib in Resources */,
 				9627476C2B6CA19B005BE4FD /* AppImage.xcassets in Resources */,
 				969BC9752B70E7C000949082 /* RootVC.xib in Resources */,
 				962747792B6CA379005BE4FD /* Localizable.strings in Resources */,
@@ -774,7 +767,6 @@
 			files = (
 				962747D32B6D080F005BE4FD /* UICollectionViewExtension.swift in Sources */,
 				962747822B6CAD88005BE4FD /* Router.swift in Sources */,
-				96BC7D6F2B71E8A00020CDC5 /* LoadMoreCRV.swift in Sources */,
 				962747E12B6D0A45005BE4FD /* UINavigationControllerExtension.swift in Sources */,
 				969BC9902B7102D800949082 /* URLs.swift in Sources */,
 				962747AC2B6CF744005BE4FD /* LanguageManager.swift in Sources */,
