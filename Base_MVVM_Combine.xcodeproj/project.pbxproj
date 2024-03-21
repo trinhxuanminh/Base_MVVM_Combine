@@ -550,7 +550,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Animations;
+			name = Animations;
 			sourceTree = "<group>";
 		};
 		969BC9602B70E14500949082 /* Splash */ = {
