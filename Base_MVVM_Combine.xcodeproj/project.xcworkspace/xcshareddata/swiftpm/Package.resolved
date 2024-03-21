@@ -14,8 +14,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/trinhxuanminh/AdMobManager",
       "state" : {
-        "revision" : "4f2b6d75498dac09f28396fa8cfaf3c662c53e85",
-        "version" : "3.8.0"
+        "revision" : "c5100f902740d70a149e6fa070aa4785a4d1b4dd",
+        "version" : "4.0.0"
+      }
+    },
+    {
+      "identity" : "adrevenue-apple-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/adrevenue-apple-sdk.git",
+      "state" : {
+        "revision" : "80de060b9fb48b3792aa6dd382a437ad56d7e39c",
+        "version" : "6.13.1"
       }
     },
     {
@@ -172,6 +181,15 @@
       }
     },
     {
+      "identity" : "purchaseconnector-dynamic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/PurchaseConnector-Dynamic",
+      "state" : {
+        "revision" : "05e05207e5574db3af80a0f4dfa3da3f2d54db78",
+        "version" : "6.13.1"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
@@ -286,15 +304,6 @@
       "state" : {
         "revision" : "a853604c9e9a83ad9954c7e3d2a565273982471f",
         "version" : "7.0.2"
-      }
-    },
-    {
-      "identity" : "trackingsdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/trinhxuanminh/TrackingSDK",
-      "state" : {
-        "revision" : "af0ecef67c957a7582ff220f7fd5abaf9535b06c",
-        "version" : "1.0.0"
       }
     },
     {

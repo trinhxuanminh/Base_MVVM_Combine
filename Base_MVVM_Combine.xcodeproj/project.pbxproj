@@ -16,7 +16,6 @@
 		962747052B6C8E8D005BE4FD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 962747042B6C8E8D005BE4FD /* Realm */; };
 		962747072B6C8E8D005BE4FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 962747062B6C8E8D005BE4FD /* RealmSwift */; };
 		9627470F2B6C8F4C005BE4FD /* AdMobManager in Frameworks */ = {isa = PBXBuildFile; productRef = 9627470E2B6C8F4C005BE4FD /* AdMobManager */; };
-		962747122B6C8F76005BE4FD /* TrackingSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 962747112B6C8F76005BE4FD /* TrackingSDK */; };
 		962747152B6C8FC7005BE4FD /* IAPManager in Frameworks */ = {isa = PBXBuildFile; productRef = 962747142B6C8FC7005BE4FD /* IAPManager */; };
 		962747182B6C9037005BE4FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 962747172B6C9037005BE4FD /* FirebaseAnalytics */; };
 		9627471A2B6C9037005BE4FD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 962747192B6C9037005BE4FD /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -197,7 +196,6 @@
 				962747442B6C9037005BE4FD /* FirebasePerformance in Frameworks */,
 				962747482B6C9037005BE4FD /* FirebaseRemoteConfigSwift in Frameworks */,
 				9627472E2B6C9037005BE4FD /* FirebaseDynamicLinks in Frameworks */,
-				962747122B6C8F76005BE4FD /* TrackingSDK in Frameworks */,
 				962747152B6C8FC7005BE4FD /* IAPManager in Frameworks */,
 				962747202B6C9037005BE4FD /* FirebaseAppCheck in Frameworks */,
 				9627473E2B6C9037005BE4FD /* FirebaseInstallations in Frameworks */,
@@ -312,6 +310,7 @@
 				96BCFFDC2B721AB8000B5FAF /* Media */,
 				962747702B6CA1F7005BE4FD /* Fonts */,
 				962747722B6CA21E005BE4FD /* Languages */,
+				963FBA9B2BAC1697007EE170 /* Animations */,
 				962747732B6CA238005BE4FD /* Types */,
 			);
 			path = Resources;
@@ -547,6 +546,13 @@
 			name = List;
 			sourceTree = "<group>";
 		};
+		963FBA9B2BAC1697007EE170 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		969BC9602B70E14500949082 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,7 +648,6 @@
 				962747042B6C8E8D005BE4FD /* Realm */,
 				962747062B6C8E8D005BE4FD /* RealmSwift */,
 				9627470E2B6C8F4C005BE4FD /* AdMobManager */,
-				962747112B6C8F76005BE4FD /* TrackingSDK */,
 				962747142B6C8FC7005BE4FD /* IAPManager */,
 				962747172B6C9037005BE4FD /* FirebaseAnalytics */,
 				962747192B6C9037005BE4FD /* FirebaseAnalyticsOnDeviceConversion */,
@@ -698,7 +703,6 @@
 				962747032B6C8E8D005BE4FD /* XCRemoteSwiftPackageReference "realm-swift" */,
 				962747082B6C8ED1005BE4FD /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				9627470D2B6C8F4C005BE4FD /* XCRemoteSwiftPackageReference "AdMobManager" */,
-				962747102B6C8F76005BE4FD /* XCRemoteSwiftPackageReference "TrackingSDK" */,
 				962747132B6C8FC7005BE4FD /* XCRemoteSwiftPackageReference "IAPManager" */,
 				962747162B6C9037005BE4FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				969BC9692B70E39A00949082 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
@@ -1121,15 +1125,7 @@
 			repositoryURL = "https://github.com/trinhxuanminh/AdMobManager";
 			requirement = {
 				kind = exactVersion;
-				version = 3.8.0;
-			};
-		};
-		962747102B6C8F76005BE4FD /* XCRemoteSwiftPackageReference "TrackingSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/trinhxuanminh/TrackingSDK";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				version = 4.0.0;
 			};
 		};
 		962747132B6C8FC7005BE4FD /* XCRemoteSwiftPackageReference "IAPManager" */ = {
@@ -1183,11 +1179,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9627470D2B6C8F4C005BE4FD /* XCRemoteSwiftPackageReference "AdMobManager" */;
 			productName = AdMobManager;
-		};
-		962747112B6C8F76005BE4FD /* TrackingSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 962747102B6C8F76005BE4FD /* XCRemoteSwiftPackageReference "TrackingSDK" */;
-			productName = TrackingSDK;
 		};
 		962747142B6C8FC7005BE4FD /* IAPManager */ = {
 			isa = XCSwiftPackageProductDependency;
