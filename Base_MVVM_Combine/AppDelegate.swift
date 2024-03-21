@@ -7,7 +7,6 @@
 
 import UIKit
 import Firebase
-import TrackingSDK
 import IAPManager
 
 @main
